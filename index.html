@@ -21,7 +21,41 @@
     <h2>contacto</h2>
     <a href="mailto:sebaa214364@gmail.com">enviar correo </a>
 
+    <form action="procesar" method="postr">
+        <label for="nombre">nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <button type="submit">enviar </button>
+    
+    <div class="container">
+        <input type="text" name="usuario">
+        <input type="password" name="password">
+        <input type="email" name="correo">
+        <input type="number" name="edad">
+        <input type="date" name="fecha">
+    </div>
 
+    <div class="container">
+        <label>
+            <input type="checkbox" name="hobbies" value="programar">
+            programar
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="dormir">
+            dormir
+        </label>
+    </div>
+    <div class="container">
+        <select name="pais">
+            <option value="uy">Uruguay</option>
+            <option value="ar">Argentina</option>
+        </select>
+    </div>
+    <div class="container">
+        <textarea name="mensaje"></textarea>
+    </div>
+    <button type="submit">enviar </button>
+    <button type="reset">borrar</button>
+    </form>
 </body>
 
 </html>

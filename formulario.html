@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+</head>
+
+<body>
+    <h1>formulario</h1>
+    <form action="procesar" method="postr">
+        <label for="nombre">nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <BR></BR>
+        <label for="usuario">password:</label>
+        <input type="password" name="password">
+        <BR></BR>
+        <label for="usuario">correo:</label>
+        <input type="email" name="correo">
+        <BR></BR>
+
+        <h2>Género</h2>
+
+        <div class="radio">
+            <label>
+                <input type="radio" name="genero" value="masculino">
+                Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="genero" value="femenino">
+                Femenino
+            </label>
+        </div>
+
+
+
+        <div class="container">
+            <H2>Pais</H2>
+            <select name="pais">
+                <option value="uy">Uruguay</option>
+                <option value="ar">Argentina</option>
+            </select>
+        </div>
+        <div class="container">
+            <textarea name="mensaje"></textarea>
+        </div>
+        <button type="submit">enviar </button>
+        <button type="reset">borrar</button>
+    </form>
+</body>
+
+</html>
+<!--
+<label>
+            <div class="container">
+            <input type="radio" name="hobbies" value="programar">
+            programar
+        </label>
+        <label>
+            <input type="radio" name="hobbies" value="dormir">
+            dormir
+        </label>
+    </div>
+-->
