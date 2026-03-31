@@ -1,0 +1,11 @@
+
+section{
+    text-align:start;
+    width: 50%;
+    max-width: 400px;
+    background-color:  lightblue;
+    margin-inline: auto;
+    border-radius: 18px;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+}

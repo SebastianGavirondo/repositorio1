@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
-    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="formulario.html">
 </head>
 
 <body>
@@ -13,28 +14,29 @@
         <h1>pagina web</h1>
     </header>
     <main>
-        
-    <nav>
-        <span>Navegacion</span>
-        <a href="index.html">index
-        </a>
-    </nav>
-    <h1>formulario</h1>
-    <form action="/formulario.html" method="get">
-        <h2>Datos para el form</h2>
-        <h3>con input</h3>
-        <label for="nombre">nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        <BR></BR>
-        <label for="usuario">password:</label>
-        <input type="password" name="password">
-        <BR></BR>
-        <label for="usuario">correo:</label>
-        <input type="email" name="correo">
-        <BR></BR>
 
+        <nav>
+            <span>Navegacion</span>
+            <a href="index.html">index
+            </a>
+        </nav>
 
-      <section id="radio">
+        <section>
+        <h1>formulario</h1>
+                    <form action="/formulario.html" method="get">
+                <h2>Datos para el form</h2>
+                <h3>con input</h3>
+                <label for="nombre">nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <BR></BR>
+                <label for="usuario">password:</label>
+                <input type="password" name="password">
+                <BR></BR>
+                <label for="usuario">correo:</label>
+                <input type="email" name="correo">
+                <BR></BR>
+        </section>
+        <section id="radio">
             <h2>Género</h2>
             <h3>con radio</h3>
             <label>
@@ -48,18 +50,19 @@
             </label>
         </section>
         <br>
-    <section id="hobbies"> <h2>Hobbies</h2>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
             <label>
                 <input type="checkbox" name="hobbie" value="deporte">
                 deporte
             </label>
 
-      <label>
+            <label>
                 <input type="checkbox" name="hobbie" value="jugar">
-             jugar
+                jugar
             </label>
 
-        <label>
+            <label>
                 <input type="checkbox" name="hobbie" value="no_hacer_nada">
                 no hacer nada
             </label>
@@ -80,16 +83,17 @@
             <h3>con text area</h3>
             <textarea name="mensaje"></textarea>
         </section>
-        
+
         <section id="botones">
             <h2>botones</h2>
-        <button type="submit">enviar </button>
-        <button type="reset">borrar</button>
+            <button type="submit">enviar </button>
+            <button type="reset">borrar</button>
         </section>
-    </form>
-    <footer>quedo todo
-    </footer>
-</main>
+
+        </form>
+        <footer>quedo todo
+        </footer>
+    </main>
 </body>
 
 </html>
