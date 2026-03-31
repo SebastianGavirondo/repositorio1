@@ -5,9 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
+    
 </head>
 
 <body>
+    <header>
+        <h1>pagina web</h1>
+    </header>
+    <main>
+        
+    <nav>
+        <span>Navegacion</span>
+        <a href="index.html">index
+        </a>
+    </nav>
     <h1>formulario</h1>
     <form action="/formulario.html" method="get">
         <h2>Datos para el form</h2>
@@ -23,7 +34,7 @@
         <BR></BR>
 
 
-        <div class="radio">
+      <section id="radio">
             <h2>Género</h2>
             <h3>con radio</h3>
             <label>
@@ -35,47 +46,50 @@
                 <input type="radio" name="genero" value="femenino">
                 Femenino
             </label>
-        </div>
+        </section>
         <br>
-        <div>
-            
-            <h2>Hobbies</h2>
+    <section id="hobbies"> <h2>Hobbies</h2>
             <label>
                 <input type="checkbox" name="hobbie" value="deporte">
                 deporte
             </label>
 
-            <label>
+      <label>
                 <input type="checkbox" name="hobbie" value="jugar">
-                jugar
+             jugar
             </label>
 
-            <label>
+        <label>
                 <input type="checkbox" name="hobbie" value="no_hacer_nada">
                 no hacer nada
             </label>
-        </div>
+        </section>
 
-
-        <div class="container">
+        <section id="pais">
             <H2>Pais</H2>
             <h3>select box</h3>
             <select name="pais">
                 <option value="uy">Uruguay</option>
                 <option value="ar">Argentina</option>
             </select>
-        </div>
+        </section>
 
 
-        <div class="container">
+        <section id="texto">
             <h2>Area de texto</h2>
             <h3>con text area</h3>
             <textarea name="mensaje"></textarea>
-        </div>
-        <h2>botones</h2>
+        </section>
+        
+        <section id="botones">
+            <h2>botones</h2>
         <button type="submit">enviar </button>
         <button type="reset">borrar</button>
+        </section>
     </form>
+    <footer>quedo todo
+    </footer>
+</main>
 </body>
 
 </html>
