@@ -1,11 +1,123 @@
+* {
+    box-sizing: border-box;
+}
 
-section{
-    text-align:start;
-    width: 50%;
-    max-width: 400px;
-    background-color:  lightblue;
-    margin-inline: auto;
-    border-radius: 18px;
-    padding: 10px 20px;
-    margin-bottom: 1rem;
+body {
+    margin: 0;
+    background-color: #ffffff;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 18% AUTO;
+    grid-template-rows: 80px 1fr auto;
+
+
+}
+
+header {
+    color: #ffffff;
+    background-color: rgb(16, 91, 156);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/3;
+    padding: 0 20px;
+}
+
+header .navegacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+header .navegacion span {
+    margin-right: 5px;
+}
+
+header .navegacion .links {
+    display: flex;
+    column-gap: 15px;
+
+}
+
+header .navegacion a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+header .navegacion a:hover {
+    color: green;
+    cursor: crosshair;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+main .img {
+    display: flex;
+    justify-content: center;
+    height: 420px;
+
+}
+
+main .texto {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.side {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 20px;
+    padding: 50px 0 0 20px;
+    background-color: rgb(29, 56, 80);
+    height: 100%;
+    width: 200px;
+
+
+
+
+
+}
+
+
+.side .navegacionBar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #ffffff;
+
+}
+
+.side .navegacionBar .linksBar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navegacionBar .linksBar a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.navegacionBar .linksBar a:hover {
+    color: #008000;
+    cursor: crosshair;
+}
+
+footer {
+    background-color: rgb(16, 91, 156);
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 50px;
 }
